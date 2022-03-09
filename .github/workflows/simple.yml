@@ -1,0 +1,16 @@
+
+name: Shell Command
+
+on: [push]
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a setting
+        run: echo "Helo wrld"
+      - name: muili line script
+        run: |
+          node -v
+          npm -v  
+       
+
